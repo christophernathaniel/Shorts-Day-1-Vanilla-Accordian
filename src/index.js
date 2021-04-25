@@ -38,17 +38,19 @@ times(3)(() =>
     <li>
       <span>Accordian 1  2 3 123
       3 4</span>
-      <p>This is the accordian space!</p>
+      <span><p>This is the accordian space!</p></span>
     </li>
     <li>
       <span>Accordian 2</span>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae auctor justo. Donec ac urna sit amet nisl tempor dictum. Ut maximus est id ligula interdum, et posuere augue facilisis. Praesent ipsum neque, rutrum id felis ut, scelerisque gravida ante. Donec justo mi, consequat eget nibh at, ornare scelerisque justo. In ullamcorper feugiat justo, in fringilla justo tristique eget. Donec a diam accumsan, mattis tellus ac, faucibus quam. Donec a magna lacinia, facilisis leo non, commodo nulla. Sed malesuada vel lectus non elementum. Nam vel fermentum enim. Duis lobortis velit non dignissim ultrices. Pellentesque sagittis quam eget varius placerat. Quisque nec eleifend orci, a ullamcorper justo.</p>
+      <span><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae auctor justo. Donec ac urna sit amet nisl tempor dictum. Ut maximus est id ligula interdum, et posuere augue facilisis. Praesent ipsum neque, rutrum id felis ut, scelerisque gravida ante. Donec justo mi, consequat eget nibh at, ornare scelerisque justo. In ullamcorper feugiat justo, in fringilla justo tristique eget. Donec a diam accumsan, mattis tellus ac, faucibus quam. Donec a magna lacinia, facilisis leo non, commodo nulla. Sed malesuada vel lectus non elementum. Nam vel fermentum enim. Duis lobortis velit non dignissim ultrices. Pellentesque sagittis quam eget varius placerat. Quisque nec eleifend orci, a ullamcorper justo.</p></span>
     </li>
     <li>
       <span>Accordian 3</span>
       <div>
-        <h3>Subtitle</h3>
-        <p>Paragraph</p>
+        <div>
+          <h3>Subtitle</h3>
+          <span>Paragraph</span>
+        </div>
       </div>
     </li>
   </ul>
