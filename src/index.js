@@ -1,10 +1,21 @@
 import "./styles.css";
 
 document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
+<h1>Vanilla Accordian</h1>
 <div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
+  <ul>
+    <li>
+      <span>Accordian</span>
+      <p>This is the accordian space!</p>
+    </li>
+    <li>
+      <span>Accordian 2</span>
+      <p>This is the accordian space(2)!</p>
+    </li>
+    <li>
+      <span>Accordian 3</span>
+      <p>This is the accordian space (3)!</p>
+    </li>
+  </ul>
 </div>
 `;
