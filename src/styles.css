@@ -1,3 +1,59 @@
 body {
   font-family: sans-serif;
 }
+
+.accordian {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  padding: 20px;
+  background-color: #e1e1e1;
+  border-radius: 20px;
+}
+
+.accordian {
+}
+
+.accordian li {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  color: #fff;
+}
+
+.accordian li:last-child {
+  margin-bottom: 0;
+}
+
+.accordian li *:nth-child(1) {
+  cursor: pointer;
+  opacity: 0.9;
+  padding: 10px;
+}
+
+.accordian li *:nth-child(1):hover {
+  opacity: 0.5;
+}
+
+.accordian li *:nth-child(2) {
+  max-height: 0px;
+  display: block;
+  overflow: hidden;
+  transition: 280ms ease-in-out all 100ms;
+  font-size: 11px;
+  display: inline-block;
+  margin: 0;
+  border-color: #444;
+}
+
+/* Active */
+.accordian li *:nth-child(1).active + * {
+  max-height: 200px;
+  padding: 10px 10px;
+
+  border-top: 1px solid #444;
+}
