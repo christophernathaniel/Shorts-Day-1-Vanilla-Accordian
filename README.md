@@ -7,7 +7,6 @@ This is a simple, lightweight and performance rich accordian to be used in any b
 
 <b>Note:</b> This isn't included as a node-module
 
-Created with CodeSandbox
 
 <h2>Include as an ES6 Module</h2>
 
