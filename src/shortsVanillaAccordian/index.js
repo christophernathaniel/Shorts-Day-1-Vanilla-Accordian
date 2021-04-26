@@ -1,4 +1,9 @@
-// Accordian JavaScript
+// * Accordian JavaScript
+// * Add class to <ul> Tag
+// * Create Standard <li> Listing
+// * The first element in the LI is the Tab
+// * The second element in the LI is the hidden content
+
 const shortsVanillaAccordian = (params) => {
   // Define Params
   const select = params.selector;
