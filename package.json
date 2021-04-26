@@ -4,20 +4,11 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html",
     "build:css": "node-sass src/ -o src/ ",
     "watch:css": "npm run build:css && node-sass src/ -o src/ -w -r"
   },
   "dependencies": {
     "node-sass": "5.0.0",
-    "parcel-bundler": "^1.6.1"
-  },
-  "devDependencies": {
-    "@babel/core": "7.2.0"
-  },
-  "resolutions": {
-    "@babel/preset-env": "7.13.8"
   },
   "keywords": []
 }
