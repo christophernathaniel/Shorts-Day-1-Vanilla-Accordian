@@ -4,6 +4,7 @@ Vanilla Accordian. An Accordian Written in JavaScript to be imported as an ES6 M
 
 This is a simple, lightweight and performance rich accordian to be used in any browser development project.
 
+See Example At: <a target="_blank" href="https://christophernathaniel.github.io/Shorts-Day-1-Vanilla-Accordian/">https://christophernathaniel.github.io/Shorts-Day-1-Vanilla-Accordian/</a>
 
 <b>Note:</b> This isn't included as a node-module
 
