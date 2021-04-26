@@ -1,5 +1,12 @@
 # Shorts-vanilla-accordian
 
+Vanilla Accordian. An Accordian Written in JavaScript to be imported as an ES6 Module.
+
+This is a simple, lightweight and performance rich accordian to be used in any browser development project.
+
+
+<b>Note:</b> This isn't included as a node-module
+
 Created with CodeSandbox
 
 <h2>Include as an ES6 Module</h2>
