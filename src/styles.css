@@ -29,21 +29,21 @@ body {
   margin-bottom: 0;
 }
 
-.accordian li *:nth-child(1) {
+.accordian li > *:nth-child(1) {
   cursor: pointer;
   opacity: 0.9;
   padding: 10px;
 }
 
-.accordian li *:nth-child(1):hover {
+.accordian li > *:nth-child(1):hover {
   opacity: 0.5;
 }
 
-.accordian li *:nth-child(2) {
-  max-height: 0px;
+.accordian li > *:nth-child(2) {
+
   display: block;
   overflow: hidden;
-  transition: 3000ms linear max-height;
+  transition: 250ms linear max-height;
   font-size: 11px;
   display: inline-block;
   margin: 0;
@@ -53,17 +53,20 @@ body {
 }
 
 /* Active */
-.accordian li *:nth-child(1).active + * {
-  max-height: 2000px;
-
-  transition: 10000ms linear max-height;
+.accordian li > *:nth-child(1).active + * {
+  transition: 250ms linear max-height;
 }
-.accordian li *:nth-child(1) + * > * {
+.accordian li > *:nth-child(1) + * > * {
   width: 100%;
   display: flex;
   margin: 0;
 }
-.accordian li *:nth-child(1).active + * > * {
+
+.accordian li > *:nth-child(1).active + * > * {
   border-top: 1px solid #444;
+ 
+}
+.accordian li > *:nth-child(1) + * > *  {
   padding: 10px 10px;
+
 }
