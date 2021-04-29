@@ -7,6 +7,7 @@
 const shortsVanillaAccordian = (params) => {
   // Define Params
   const select = params.selector;
+  const getStructuredNodes = select + " li";
   const clickable = select + " li > *:nth-child(1)";
   const openable = select + " li > *:nth-child(2)";
   const openableContent = select + " li > *:nth-child(2) > div";
@@ -40,6 +41,7 @@ const shortsVanillaAccordian = (params) => {
   // Find Index
   function indexInParent(node) {
     var children = node.parentNode.childNodes;
+    console.log(children);
     var num = 0;
     for (var i=0; i<children.length; i++) {
          if (children[i]==node) return num;
@@ -48,13 +50,28 @@ const shortsVanillaAccordian = (params) => {
     return -1;
   }
 
+  // Find Global Index
+
+  function indexInGlobal(node, qsa) {
+    console.log(node);
+    var children = document.querySelectorAll(qsa);
+    var num = 0;
+    for (var i=0; i<children.length;i++) {
+      if(children[i]==node) return num;
+      if(children[i].nodeType==1) num++;
+    }
+  }
+
   // Handle Add Event
   const accordianAdditionManagement = async (event) => {
     let tgt = event.target;
     let node = getAdjacentNode(tgt);
     tgt.classList.add("active");
 
-    node.style.maxHeight = openHeights[indexInParent(tgt.parentNode)] + 'px';
+    
+    node.style.maxHeight = openHeights[indexInGlobal(tgt.parentNode, getStructuredNodes)] + 'px';
+
+    //console.log(indexInGlobal(tgt.parentNode));
     
     return true;
   };
