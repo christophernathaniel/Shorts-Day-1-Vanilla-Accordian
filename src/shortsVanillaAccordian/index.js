@@ -51,7 +51,6 @@ const shortsVanillaAccordian = (params) => {
   }
 
   // Find Global Index
-
   function indexInGlobal(node, qsa) {
     console.log(node);
     var children = document.querySelectorAll(qsa);
