@@ -41,7 +41,6 @@ const shortsVanillaAccordian = (params) => {
   // Find Index
   function indexInParent(node) {
     var children = node.parentNode.childNodes;
-    console.log(children);
     var num = 0;
     for (var i=0; i<children.length; i++) {
          if (children[i]==node) return num;
@@ -52,7 +51,6 @@ const shortsVanillaAccordian = (params) => {
 
   // Find Global Index
   function indexInGlobal(node, qsa) {
-    console.log(node);
     var children = document.querySelectorAll(qsa);
     var num = 0;
     for (var i=0; i<children.length;i++) {
@@ -63,6 +61,8 @@ const shortsVanillaAccordian = (params) => {
 
   // Handle Add Event
   const accordianAdditionManagement = async (event) => {
+    var t0 = performance.now();
+
     let tgt = event.target;
     let node = getAdjacentNode(tgt);
     tgt.classList.add("active");
@@ -70,8 +70,9 @@ const shortsVanillaAccordian = (params) => {
     
     node.style.maxHeight = openHeights[indexInGlobal(tgt.parentNode, getStructuredNodes)] + 'px';
 
-    //console.log(indexInGlobal(tgt.parentNode));
-    
+    var t1 = performance.now();
+
+    console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.")
     return true;
   };
 
